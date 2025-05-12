@@ -1,0 +1,76 @@
+						VIM
+
+gg (mover o cursor para primeira linha)
+
+yy (copia a linha inteira)
+
+G (move o cursor para última linha)
+			
+cc (para cortar a linha inteira)
+
+:x (sair e salvar)
+
+ZZ (sair e salvar)
+
+vim -o (abrir varios arquivos na forma horizontal)
+
+ctrl + ww (para alternar entre arquivos)
+
+:qa! (sair, e salvar todos os arquivos abertos)
+
+:%s/nologin/yeslongin/g ( para subtituir todas as palavra nologin para yeslogin)
+
+:set (abre as configurações padrões do vim)
+
+:set number (ativa a numeração por linha no vim)
+
+:set nonumber (desativa a numeração por linhas)
+
+:syntax off (desativar as cores)
+:syntax on (ativar as cores)
+
+/alguma palavra  (para pesquisar)
+:set hlsearch (destacar a pesquisa)
+:set nohlsearch (tirar o destaque)
+
+:! ls/etc (executar um comando do shell dentro do vim)
+:r ls /etc (execultar um comando no shell, jogando a saida para dentro do arquivo)
+
+:split (horizontal)
+:vsplit (vertical)
+
+:e /etc/fstab (abrir um outro arquivo)
+
+:10 d (remover somente a linha 10)
+:1;5 d (para execluir o intervalo da linha 1 a 5)
+
+:1;5 y (para copiar o intervalo da linha 1 a 5)
+:10 (para deixar o cursor na linha 10)
+p (para colar as linha copiadas)
+u (desfaz)
+ctrl + r (refazer)
+
+:1:10 s/nologin/yeslogin (mudar somente a linha 10)
+:1:10 s/nologin/yeslogin/g (mudar o nologin para yeslogin da linha 1 a 10)
+
+:g/nologin/d (remover todas as linha que possui o nologin)
+:1;10g/nologin/d (remover em um intervalo de 1 a 10)
+
+:q! (sair sem salvar)
+
+:g/^\s*$/d (para remover as linhas em branco)
+
+:g/^\s*#/d (remover as linhas comentada do arquivo)
+
+__________________________________________________________________________
+	- Editar o arquivo vimrc para definir uma configuração padrão do editor VIM
+
+sudo vim/etc/vim/vimrc +$
+
+exemplo adicionar a ultima linha do arquivo 
+
+set ic – busca sem diferenciar maiusculas e minusculas
+set numerber – numera as linhas
+set hlsearch – destaca a pesquisa
+syntax on 
+__________________________________________________________________________
